@@ -1,5 +1,28 @@
 apply plugin: 'com.android.application'
 
+//repositories {
+//    // APS, Mopub
+//    jcenter()
+//
+//    // Add for chartboost
+//    maven { url 'https://chartboostmobile.bintray.com/Chartboost' }
+//
+//    // Add for ironsource
+//    maven { url 'https://dl.bintray.com/ironsource-mobile/android-sdk'}
+//
+//    // Add for vungle
+//    maven { url 'https://jitpack.io' }
+//
+//    // Add for Fyber
+//    maven { url "https://fyber.bintray.com/marketplace" }
+//
+//    // Add for Ogury
+//    maven { url "https://maven.ogury.co" }
+//
+//    // Add for Smaato
+//    maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }
+//}
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -58,7 +81,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.3.3'
     implementation 'androidx.navigation:navigation-ui:2.3.3'
 
-//    implementation 'org.seton.adsdk:mavl-adsdk-unity:1.0.0'
+    implementation 'org.seton.adsdk:mavl-adsdk-unity:1.0.1-test'
+//    implementation 'org.seton.adsdk:mavl-adsdk-unity:1.0.1'
+//    implementation project(path: ':mavl-adsdk-unity')
 
-    implementation project(':mavl-adsdk-unity')
+//   implementation project(':mavl-adsdk-unity')
 }

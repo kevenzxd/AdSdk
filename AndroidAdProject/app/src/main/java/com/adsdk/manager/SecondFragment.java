@@ -1,4 +1,4 @@
-package com.adsdk.unity;
+package com.adsdk.manager;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

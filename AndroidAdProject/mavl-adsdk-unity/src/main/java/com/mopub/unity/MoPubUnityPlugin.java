@@ -27,8 +27,8 @@ import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.network.ImpressionData;
 import com.mopub.network.ImpressionListener;
 import com.mopub.network.ImpressionsEmitter;
-import com.unity.sdk.AdSdkException;
-import com.unity.sdk.AdSdkManager;
+import com.adsdk.manager.AdSdkException;
+import com.adsdk.manager.AdSdkManager;
 //import com.unity3d.player.UnityPlayer;
 
 import java.io.IOException;

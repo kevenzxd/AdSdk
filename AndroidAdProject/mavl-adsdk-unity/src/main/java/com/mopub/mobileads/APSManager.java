@@ -10,11 +10,10 @@ import com.amazon.device.ads.DTBAdSize;
 import com.amazon.device.ads.MRAIDPolicy;
 import com.mopub.common.MoPub;
 import com.mopub.common.logging.MoPubLog;
-import com.unity.sdk.AdSdkException;
-import com.unity.sdk.AdSdkManager;
+import com.adsdk.manager.AdSdkException;
+import com.adsdk.manager.AdSdkManager;
 //import com.unity3d.player.UnityPlayer;
 
-import java.io.IOException;
 
 public class APSManager {
 

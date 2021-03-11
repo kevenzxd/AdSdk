@@ -1,4 +1,4 @@
-package com.unity.sdk;
+package com.adsdk.manager;
 
 import android.app.Activity;
 import android.util.Log;
@@ -17,7 +17,6 @@ import com.mopub.common.logging.MoPubLogger;
 import com.ogury.sdk.Ogury;
 import com.ogury.sdk.OguryConfiguration;
 import com.unity.sdk.ad.AdPresenter;
-import com.unity.sdk.ad.NativeLayoutData;
 import com.unity.sdk.base.FullLifecycleObserverAdapter;
 import com.unity.sdk.base.LifecycleHandler;
 

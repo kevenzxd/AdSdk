@@ -1,4 +1,4 @@
-package com.adsdk.unity;
+package com.adsdk.manager;
 
 import android.os.Bundle;
 
@@ -13,10 +13,6 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.unity.sdk.AdSdkManager;
-import com.unity.sdk.UnityInterface;
-import com.unity.sdk.ad.NativeLayoutData;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
 
     protected AdSdkManager mAdSdkManager;
 

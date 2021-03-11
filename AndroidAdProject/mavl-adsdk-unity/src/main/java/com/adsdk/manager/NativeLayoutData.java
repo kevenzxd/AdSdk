@@ -1,4 +1,4 @@
-package com.unity.sdk.ad;
+package com.adsdk.manager;
 
 import androidx.annotation.NonNull;
 

@@ -8,18 +8,14 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.adsdk.R;
 import com.mopub.mobileads.MoPubNativeAd;
 import com.mopub.nativeads.MoPubNative;
 import com.mopub.nativeads.NativeAd;
 import com.mopub.nativeads.NativeErrorCode;
-import com.unity.sdk.AdSdkManager;
-import com.unity.sdk.ad.NativeLayoutData;
+import com.adsdk.manager.AdSdkManager;
+import com.adsdk.manager.NativeLayoutData;
 
 import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 
 
 /**
