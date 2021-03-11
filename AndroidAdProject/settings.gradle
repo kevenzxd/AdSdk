@@ -1,0 +1,3 @@
+include ':app'
+include ':mavl-adsdk-unity'
+rootProject.name = "AdSdk"

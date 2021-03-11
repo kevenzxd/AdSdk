@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:3.6.2"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+//        // Add for JCenter
+//        classpath 'com.novoda:bintray-release:0.9.1'
+
+        // Add for JCenter
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        // APS, Mopub
+        jcenter()
+
+        // Add for chartboost
+        maven { url 'https://chartboostmobile.bintray.com/Chartboost' }
+
+        // Add for ironsource
+        maven { url 'https://dl.bintray.com/ironsource-mobile/android-sdk'}
+
+        // Add for vungle
+        maven { url 'https://jitpack.io' }
+
+        // Add for Fyber
+        maven { url "https://fyber.bintray.com/marketplace" }
+
+        // Add for Ogury
+        maven { url "https://maven.ogury.co" }
+
+        // Add for Smaato
+        maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }
+//    maven { url "https://s3.amazonaws.com/moat-sdk-builds" }
+//    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+
+//        maven {
+//            url properties.getProperty("sdk.dir")+"/extras/android/m2repository"
+//        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
