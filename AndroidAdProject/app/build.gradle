@@ -81,9 +81,40 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.3.3'
     implementation 'androidx.navigation:navigation-ui:2.3.3'
 
-    implementation 'org.seton.adsdk:mavl-adsdk-unity:1.0.1-test'
-//    implementation 'org.seton.adsdk:mavl-adsdk-unity:1.0.1'
-//    implementation project(path: ':mavl-adsdk-unity')
+    implementation ('org.seton.adsdk:mavl-adsdk-unity:1.0.1-test') {
+//        exclude group: 'androidx.media'
+//        exclude group: 'androidx.browser'
+//        exclude group: 'androidx.core'
+//        exclude group: 'androidx.annotation'
+//        exclude group: 'androidx.appcompat'
+//        exclude group: 'androidx.arch.core'
+//        exclude group: 'androidx.asynclayoutinflater'
+//        exclude group: 'androidx.collection'
+//        exclude group: 'androidx.coordinatorlayout'
+//        exclude group: 'androidx.cursoradapter'
+//        exclude group: 'androidx.customview'
+//        exclude group: 'androidx.documentfile'
+//        exclude group: 'androidx.drawerlayout'
+//        exclude group: 'androidx.fragment'
+//        exclude group: 'androidx.interpolator'
+//        exclude group: 'androidx.legacy'
+//        exclude group: 'androidx.lifecycle'
+//        exclude group: 'androidx.loader'
+//        exclude group: 'androidx.localbroadcastmanager'
+//        exclude group: 'androidx.print'
+//        exclude group: 'androidx.savedstate'
+//        exclude group: 'androidx.slidingpanelayout'
+//        exclude group: 'androidx.swiperefreshlayout'
+//        exclude group: 'androidx.vectordrawable'
+//        exclude group: 'androidx.versionedparcelable'
+//        exclude group: 'androidx.viewpager'
+//        //以下主要与Firebase相冲突。
+//        exclude group: 'com.google.android.gms', module: 'play-services-basement'
+////         exclude group: 'com.google.android.gms', module: 'play-services-ads-identifier'
+//        exclude group: 'com.google.android.gms', module: 'play-services-measurement-base'
+//        exclude group: 'com.google.android.gms', module: 'play-services-measurement-sdk-api'
+//        exclude group: 'com.google.android.gms', module: 'play-services-tasks'
+    }
 
 //   implementation project(':mavl-adsdk-unity')
 }
