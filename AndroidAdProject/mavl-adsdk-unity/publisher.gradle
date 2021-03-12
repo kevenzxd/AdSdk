@@ -119,7 +119,7 @@ def bintrayUserOrg = 'kevenzxd'
 def projectPkgName = 'org.seton.adsdk'
 def projectName = 'mavl-adsdk-unity'
 def projectDesc = 'Mavl AdSdk Unity Base on Mopub Logic.'
-def versionName = '1.0.1-test'
+def versionName = '2.3.2'
 
 version = versionName
 group = projectPkgName
