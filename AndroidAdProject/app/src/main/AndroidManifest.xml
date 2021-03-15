@@ -13,7 +13,10 @@
 
         <!--replaceStart-->
         <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3946952859060313~1303682466" />
+        <!-- 添加 AppLovin 支持。-->
         <meta-data android:name="applovin.sdk.key" android:value="9PT0t6me45aFfVViXXFlnO6Q2ewr5ITFh1FZ80DC5oSmHzSqUhTF5fg7JayOuVeaWu8fvLs-7JkPGBDlun_zRf" />
+        <!-- 添加 Ogury 支持。-->
+        <meta-data android:name="ogury.appid" android:value="" />
         <!--replaceEnd-->
 
         <activity

@@ -1,6 +1,7 @@
 package com.adsdk.manager;
 
 import android.app.Activity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -19,6 +20,7 @@ import com.ogury.sdk.OguryConfiguration;
 import com.unity.sdk.ad.AdPresenter;
 import com.unity.sdk.base.FullLifecycleObserverAdapter;
 import com.unity.sdk.base.LifecycleHandler;
+import com.unity.sdk.utils.AppUtils;
 
 public class AdSdkManager implements LifecycleOwner {
 
@@ -174,7 +176,13 @@ public class AdSdkManager implements LifecycleOwner {
     }
 
     private void initOgury() {
-        OguryConfiguration.Builder oguryConfigurationBuilder = new OguryConfiguration.Builder(mActivity, "OGY-XXXXXXXXXXXX");
-        Ogury.start(oguryConfigurationBuilder.build());
+        Object oguryAppIdO = AppUtils.loadDefaultsFromMetadata(mActivity, "ogury.appid");
+        if (oguryAppIdO != null) {
+            String oguryId = String.valueOf(oguryAppIdO);
+            if (!TextUtils.isEmpty(oguryId)) {
+                OguryConfiguration.Builder oguryConfigurationBuilder = new OguryConfiguration.Builder(mActivity, oguryId);
+                Ogury.start(oguryConfigurationBuilder.build());
+            }
+        }
     }
 }
