@@ -51,6 +51,9 @@ allprojects {
 //        maven {
 //            url properties.getProperty("sdk.dir")+"/extras/android/m2repository"
 //        }
+
+        // Add for AdColony
+        maven { url 'https://adcolony.bintray.com/AdColony' }
     }
 }
 

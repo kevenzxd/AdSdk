@@ -169,6 +169,9 @@ dependencies {
     implementation 'com.smaato.android.sdk:mopub-rewarded-video-adapter-5-13:21.5.7'
     implementation 'com.smaato.android.sdk:mopub-native-adapter:21.5.7'
 
+    // Adcolony
+    implementation 'com.adcolony:sdk:4.4.1'
+    implementation 'com.mopub.mediation:adcolony:4.4.1.0'
     // end:  import by native.
 }
 
